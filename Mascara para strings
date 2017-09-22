@@ -1,5 +1,9 @@
 //funcion
-
+//1
+function maskify(cc) {
+  return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
+}
+//2
 function maskify(cc) {
 var replaced = cc.replace(/.(?=.{4,}$)/g, '#');
 return replaced;
